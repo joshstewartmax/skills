@@ -6,7 +6,7 @@ Most skills here are copied, and some are modified, from two upstream sets. Both
 
 By Lauren Tan (poteto). Source: https://github.com/cursor/plugins/tree/main/pstack
 
-Nearly all skills in this repo come from pstack: `unslop`, `technical-writing`, `architect`, `arena`, `blast-radius`, `why`, `how`, `teach`, `recall`, `reflect`, `show-me-your-work`, `automate-me`, `figure-it-out`, `no-comments`, `bro`, and every `principle-*` skill.
+Nearly all skills in this repo come from pstack: `unslop`, `technical-writing`, `architect`, `arena`, `blast-radius`, `why`, `how`, `teach`, `recall`, `reflect`, `show-me-your-work`, `automate-me`, `figure-it-out`, `no-comments`, `bro`, and every `principle-*` skill. The `comment-sicko` agent (in `agents/`, used by `no-comments`) also comes from pstack.
 
 ### Changes from upstream
 

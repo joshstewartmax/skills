@@ -6,7 +6,7 @@ The theme is less code, higher quality: cut slop from writing, prove work agains
 
 ## Install
 
-Clone, then link every skill into `~/.claude/skills`:
+Clone, then link every skill into `~/.claude/skills` and every agent into `~/.claude/agents`:
 
 ```bash
 git clone https://github.com/joshstewartmax/skills ~/repos/skills
@@ -14,7 +14,7 @@ cd ~/repos/skills
 ./install.sh
 ```
 
-`install.sh` symlinks each skill, so edits in the repo take effect immediately. Re-run it any time you add a skill. It backs up any real directory it would overwrite to `<name>.bak`.
+`install.sh` symlinks each skill and each agent, so edits in the repo take effect immediately. Re-run it any time you add one. It backs up any real path it would overwrite to `<name>.bak`.
 
 ## What's here
 
@@ -41,7 +41,7 @@ cd ~/repos/skills
 
 ### Verification and review
 - **blast-radius** find what a change breaks beyond the diff, then prove the one safety fact by running code.
-- **no-comments** strip comments that restate the code, and encode real constraints in structure instead.
+- **no-comments** strip comments that restate the code, and encode real constraints in structure instead. Spawns the **Comment Sicko** agent (in `agents/`) to hunt them.
 - **show-me-your-work** keep a reviewable decision log for long or unattended runs.
 - **reflect** review the active transcript with parallel critics and route each lesson to a skill edit.
 
