@@ -26,6 +26,12 @@ By Matt Pocock. Source: https://github.com/mattpocock/skills
 
 Copied verbatim (only the OpenAI `agents/` adapter files were dropped): `grill-me`, `grilling`, `grill-with-docs`, `domain-modeling`, `handoff`, `claude-handoff`, `prototype`.
 
+`improve-codebase-architecture` is copied and adapted: rewired to point at this repo's principles and the `arena` skill instead of `codebase-design`, and its architecture vocabulary uses pstack's "boundary" rather than "seam".
+
+### codebase-design, intentionally not included
+
+Its deep-module concepts are already covered here: shallow modules, information leakage, temporal decomposition, and pass-through methods live in `architect`'s `design-red-flags.md`, and interface compression lives in `principle-minimize-reader-load`. Its portable heuristics were folded into the principles: the deletion test and the one-vs-two-implementation rule into `principle-minimize-reader-load`, and "the interface is the test surface" plus testing across a boundary by dependency type into `principle-boundary-discipline`. Where the two vocabularies clashed (codebase-design's "seam" vs pstack's "boundary"), pstack's term wins.
+
 ## Original skills
 
 `to-spec`, `to-tickets`, and `wayfinder` are written for this repo. They are lightweight takes on the mattpocock engineering skills of the same names: they produce local Markdown files and compose with `unslop`, with no issue tracker or setup step required.

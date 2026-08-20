@@ -13,7 +13,8 @@ Maintainability is the work a reader must do to understand code. Track two axes:
 **Why:** Code is read far more than it is written. LOC, cyclomatic complexity, and "clean architecture" are proxies. Reader load is the thing that matters. The two axes are independent. A flat file with 50 globals can be as hard to reason about as a 6-layer adapter stack. Guard both. This is the human analog of [Guard the Context Window](../principle-guard-the-context-window/SKILL.md): working memory is finite for readers too.
 
 **The pattern:**
-- **Collapse layers** that do not earn their keep: wrappers with one caller, adapters with no second implementation, indirection introduced for a future that never came. Inline them.
+- **Collapse layers** that do not earn their keep: wrappers with one caller, adapters with no second implementation, indirection introduced for a future that never came. Inline them. One implementation behind an interface is a hypothetical boundary; two is a real one, so wait for the second before adding the indirection.
+- **Apply the deletion test.** To decide whether a module or layer earns its keep, imagine deleting it. If complexity vanishes, it was a pass-through; if the same complexity reappears across its callers, it was concentrating something real. Keep the second kind, inline the first.
 - **Make adjacent layers change the abstraction.** A layer that repeats the same methods and arguments adds reader load without compression. Collapse pass-through layers.
 - **Demand interface compression.** A broad interface that hides little complexity makes readers learn both the surface and the implementation. Prefer boundaries that hide meaningful decisions.
 - **Shrink state scope:** prefer pure functions (returns over mutations), locals over fields, fields over module state, and module state over globals. Derive instead of sync.

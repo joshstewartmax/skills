@@ -38,6 +38,7 @@ cd ~/repos/skills
 - **to-spec** turn the conversation into a spec Markdown file.
 - **to-tickets** break a plan into tracer-bullet ticket files, each declaring what blocks it.
 - **wayfinder** plan work too big for one session as a map of decision files, resolved one at a time.
+- **improve-codebase-architecture** scan the codebase for shallow modules, present deepening opportunities as a visual HTML report, then grill the one you pick.
 
 ### Verification and review
 - **blast-radius** find what a change breaks beyond the diff, then prove the one safety fact by running code.

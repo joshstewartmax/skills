@@ -29,6 +29,10 @@ Code organization:
 - Prompt construction: structured state in, string out
 - Scoring and assessment: pure transforms from state to results
 
+Testing across a boundary:
+- **The interface is the test surface.** Test a module through the same interface its callers use. If a test has to reach past the interface, the module is the wrong shape. When you deepen shallow modules, write tests at the new interface and delete the old per-piece tests instead of keeping both.
+- **Match the test strategy to the dependency.** Pure, in-process logic: test it directly. A dependency with a local stand-in (a local database, an in-memory filesystem): test with the stand-in. An owned-remote or third-party dependency: put it behind a port, inject a real adapter in production and an in-memory or mock adapter in tests. Add the port only once a second adapter actually exists.
+
 **The tests:**
 - "Is this data crossing a system boundary right now?" If not, validation is redundant.
 - "Can this be a pure function that the shell just calls?" If yes, extract it.
