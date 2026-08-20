@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 # Symlink every skill in this repo into your user-level Claude skills directory.
+# A skill is any top-level directory containing a SKILL.md (so licenses/ etc. are skipped).
 # Idempotent: re-run any time. Existing symlinks are replaced; real directories
 # of the same name are backed up to <name>.bak rather than clobbered.
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SRC="$REPO_DIR/skills"
 DEST="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
 
 mkdir -p "$DEST"
-echo "Linking skills from $SRC into $DEST"
+echo "Linking skills from $REPO_DIR into $DEST"
 
 count=0
-for dir in "$SRC"/*/; do
+for dir in "$REPO_DIR"/*/; do
+  [ -f "$dir/SKILL.md" ] || continue
   name="$(basename "$dir")"
   target="$DEST/$name"
   if [ -L "$target" ]; then
