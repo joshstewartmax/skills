@@ -1,4 +1,4 @@
-# my-skills
+# skills
 
 My personal set of Claude Code skills. Most are copied and adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack) (Lauren Tan) and [mattpocock/skills](https://github.com/mattpocock/skills) (Matt Pocock); a few are my own. See [ATTRIBUTION.md](ATTRIBUTION.md) for sources, licenses, and what I changed.
 
@@ -9,8 +9,8 @@ The theme is less code, higher quality: cut slop from writing, prove work agains
 Clone, then link every skill into `~/.claude/skills`:
 
 ```bash
-git clone <this-repo-url> ~/repos/my-skills
-cd ~/repos/my-skills
+git clone https://github.com/joshstewartmax/skills ~/repos/skills
+cd ~/repos/skills
 ./install.sh
 ```
 
