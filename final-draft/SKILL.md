@@ -28,14 +28,14 @@ current point directly instead, or cut it.
 
 ## Patterns to detect and fix
 
-1. **Corrective framing.** "This is not a new capability, just reliability", "X is not
-   a gate but a boost", "rather than", "actually". The text negates a claim the reader
-   never saw. Fix: state what it is. "The semantic layer improves reliability."
+1. **Corrective framing.** "This is not a new venue, just a bigger one", "X is not a
+   rule but a guideline", "rather than", "actually". The text negates a claim the reader
+   never saw. Fix: state what it is. "The new hall seats twice as many people."
 
 2. **Bolt-on brackets.** A title or sentence kept whole with the real point appended in
-   brackets: "Query own data (reliability climbs)". The bracket usually holds the key
-   point. Fix: fold it into the main statement and delete the bracket. "Reliability over
-   Codat's own data."
+   brackets: "Weekend schedule (attendance climbs)". The bracket usually holds the key
+   point. Fix: fold it into the main statement and delete the bracket. "Attendance is
+   higher on weekends."
 
 3. **Decision-log residue.** Sections like "Open decisions (resolved)", "Note:",
    "Update:", "As we clarified". These record the conversation, not the subject. Fix:
@@ -50,7 +50,7 @@ current point directly instead, or cut it.
    first-time reader would genuinely raise it.
 
 6. **Over-emphasis on the last correction.** Stressing the freshly-corrected point
-   harder than its weight ("this is really just reliability"). To a new reader the
+   harder than its weight ("this is really just a bigger hall"). To a new reader the
    emphasis is out of proportion. Fix: give it normal weight.
 
 7. **Process and time words.** "now", "originally", "previously", "we've updated", "on
