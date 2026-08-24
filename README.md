@@ -20,6 +20,7 @@ cd ~/repos/skills
 
 ### Writing and communication
 - **unslop** cuts AI tells from any writing. Most other skills run it as a final pass.
+- **final-draft** edits text so it reads as if the current understanding was the plan all along, with no trace of the edits or conversation that produced it.
 - **technical-writing** a layered standard (Diataxis, Google developer style, ASD-STE100 Simplified English, Global English) for docs, RFCs, readmes, PR descriptions, and commits.
 - **teach** explains a body of work plainly, weaving in `how` and `why`.
 - **bro** restates the last message in plain language, no jargon.
