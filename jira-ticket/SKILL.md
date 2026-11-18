@@ -49,15 +49,14 @@ No implementation detail that belongs in the code or the PR.
 
 1. Read the epic or parent first to get the project key and to confirm it exists.
 2. Default the issue type to Story unless the user names another.
-3. Set the parent to the epic, and pass the description as Markdown.
-4. Read one created ticket back to confirm the parent was set.
-5. Link the dependencies, as below.
-6. Reply with each ticket's key, linked, and its title, and the links you made.
+3. Run `unslop` over the summary and description.
+4. Set the parent to the epic, and pass the description as Markdown.
+5. Read one created ticket back to confirm the parent was set.
+6. Link the dependencies, as below.
+7. Reply with each ticket's key, linked, and its title, and the links you made.
 
 ## Linking dependencies
 
 When one ticket can't start or merge until another lands, link them in Jira as well as saying so in the context. Use the `Blocks` link type, with the ticket that has to land first as the blocker: "DATA-2612 blocks DATA-2613". Check the project's link types first, and use the closest match if `Blocks` doesn't exist.
 
 Link only real ordering constraints. Tickets that are merely related, or that share an epic, need no link. When a new ticket depends on an existing one, link to the existing ticket too.
-
-Run `unslop` over the text before creating the ticket.
