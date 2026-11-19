@@ -22,6 +22,7 @@ cd ~/repos/skills
 - **unslop** cuts AI tells from any writing. Most other skills run it as a final pass.
 - **final-draft** edits text so it reads as if the current understanding was the plan all along, with no trace of the edits or conversation that produced it.
 - **technical-writing** a layered standard (Diataxis, Google developer style, ASD-STE100 Simplified English, Global English) for docs, RFCs, readmes, PR descriptions, and commits.
+- **pr-description** writes PR descriptions that open with the gist and carry only what a colleague can't get from the diff, the linked ticket, or CI.
 - **leaving-pr-comments** prefixes agent-authored GitHub comments with a note saying which model is responding on whose behalf, and keeps the comment itself direct.
 - **teach** explains a body of work plainly, weaving in `how` and `why`.
 - **bro** restates the last message in plain language, no jargon.
